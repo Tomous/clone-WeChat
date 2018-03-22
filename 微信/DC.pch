@@ -1,0 +1,66 @@
+
+
+
+//AppID：wxf894e135bc8d466f
+//AppSecret：768769fe533c47448ddd7b5845cc2846
+
+// 王云的 15225961316  w18338569064y
+
+#define JWAppKey @"1719361035"
+#define JWRedirect_uri @"http://baidu.com"
+#define JWAppSecret @"5c04e997dce165ff9ee7096f614d4fca"
+
+
+#ifndef ___DC_pch
+#define ___DC_pch
+
+//包子的
+//#define JWAppKey @"1715919434"
+//#define JWRedirect_uri @"http://www.scjy.net"
+//#define JWAppSecret @"ba4d2800d8af6ae7aab7862671592803"
+
+
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+
+#define DCAppID wxf894e135bc8d466f
+#define DCAppSecret768769fe533c47448ddd7b5845cc2846
+
+// 4.7
+#define FourInch [UIScreen mainScreen].bounds.size.height == 568.0
+
+// 颜色
+#define DCColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define DCRandomColor DCColor((arc4random_uniform(256)),(arc4random_uniform(256)),(arc4random_uniform(256)))
+
+#define DCGlobalBg DcColor(211, 211, 211)
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+
+#define DCScreenW [UIScreen mainScreen].bounds.size.width
+#define DCScreenH [UIScreen mainScreen].bounds.size.height
+// cell
+
+#define DCStatusCellMargin 10
+
+// 原创微博昵称的font
+#define DCStatusOriginalNameFont [UIFont systemFontOfSize:14]
+// 原创微博时间的font
+#define DCStatusOriginalTimeFont [UIFont systemFontOfSize:12]
+// 原创微博来源的font
+#define DCStatusOriginalSourceFont DCStatusOriginalTimeFont
+// 原创微博内容的font
+#define DCStatusOriginalTextFont [UIFont systemFontOfSize:15]
+
+// 转发微博昵称的font
+#define DCStatusRetweetedNameFont DCStatusOriginalNameFont
+// 转发微博内容的font
+#define DCStatusRetweetedTextFont DCStatusOriginalTextFont
+
+// cel高亮字体颜色
+#define DCStatusHightLightedColor DCColor(82,163,253)
+
+#endif
